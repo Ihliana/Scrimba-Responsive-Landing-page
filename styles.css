@@ -20,7 +20,8 @@ h2 {
  }
 
  .beta-text, 
- .subheading {
+ .subheading, 
+ .top-text {
     text-transform: uppercase;
  }
 
@@ -37,6 +38,25 @@ h2 {
 p {
     font-size: 1.125rem;   /* 18 / 16 =  1.125rem */
     line-height: 1.35;
+}
+
+/* 
+  Challenge: 
+    Adjust the visual order of .top-text and re-distribute
+    the space inside .intro: 
+      - Display .top-text above the h1 and align it to 
+        the top edge of the .intro section
+      - Evenly distribute the content inside .intro
+      - The top border of .top-text should match the width of the text
+*/
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
 }
 
 .fine-print {
@@ -65,10 +85,12 @@ p {
 .intro {
     color: #fff;
     min-height: 250px;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     background: #9480e4 url('images/intro-bg.png');
     background-size: cover;
+    padding-bottom: 1.5em;
+
 }
 
 /* --- Main content --- */
@@ -92,20 +114,6 @@ p {
     Form
    ================= */
 
-/* 
-  Challenge: Style the form inputs
-    - Display each input on a separate line so they
-      expand to the full width of their container
-    - Use a bottom margin to create space between the input elements
-    - Apply a padding in em that's equal to half the input's
-      font-size to all 4 sides
-
-    - Give the inputs a solid 2px border using the value #d1d5db
-    - Round the corners of the input fields by 5px
-    - On focus, update an input’s border color to #8a71ec
-      and background color to #e6e8ec
-*/
-
 input, 
 button {
     font-family: inherit;
@@ -128,17 +136,6 @@ input:focus {
     background-color: #e6e8ec;
 }
 
-
-/* 
-  Challenge: Style the submit button
-    - The button should have the same font-family, width
-      and border-radius of the input elements
-    - Use the .btn selector to set the custom button styles;
-      use the slide as a guide
-    - Button colors:
-      - Background: #8a71ec
-      - Background on hover: #b7a7f6
-*/
 
 .btn {
    border-radius: 5px;
