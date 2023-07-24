@@ -55,12 +55,19 @@ p {
 
 /* --- Intro --- */
 
+/* 
+  Challenge: Apply a full background image
+    - Set the background of .intro to the image `intro-bg.png`
+    - The background image should scale to fill the entire
+      width and height of .intro while preserving its ratio
+*/
 .intro {
     color: #fff;
-    background-color: #9480e4;
     min-height: 250px;
     justify-content: center;
     text-align: center;
+    background: #9480e4 url('images/intro-bg.png');
+    background-size: cover;
 }
 
 /* --- Main content --- */
@@ -84,27 +91,6 @@ p {
 /* =================
     Media queries 
    ================= */
-   
-   
-/* 
-  Challenge:
-    - Expand the height of .intro so that it takes up
-      the full height of the browser window
-     - Vertically center the content inside .main-content
-*/
-
-   
-/* 
-  Challenge: Adjust text for wider screens
-    - In the media query, increase the h1 font-size to
-      a rem value equal to 52px
-    - Increase the h2 font-size to a rem value equal to 42px
-    - Increase the font-size of .beta-text to a 
-      rem value equal to 20px
-
-    - now use 'vw' to adjust the h1 content
-*/
-
 
 @media screen and (min-width: 576px){
    body {
