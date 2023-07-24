@@ -5,25 +5,7 @@ body {
 }
 
 /* --- TYPOGRAPHY --- */
-   
-/* 
-  Challenge 1: Set the initial styles for text
-    - Set the h1 to a relative font-size value equal to 40px
-    - Apply a text shadow to the h1 using the color value #816fca
-*/
 
-/* 
-  Challenge 2: Set the initial styles for text
-    - Set the h2 to a relative font-size value equal to 36px
-    - Give the h2 a top and bottom margin value in em equal to 6px
-*/
-
-/* 
-  Challenge 3: Set the initial styles for text
-    - Set the paragraph to a relative font-size value equal to 18px
-    - Set the p line-height to 1.35 times its font-size value
-    - Give .subheading a bottom margin in em equal to half its font-size value
-*/
 
 h1 {
     font-weight: 400;
@@ -35,6 +17,11 @@ h2 {
     font-size: 2.25rem ;     /* 36 / 16 = 2.25 */
     margin: 0.167em 0 ;                   /* 6 / 36 = 0.0.167em */
 
+ }
+
+ .beta-text, 
+ .subheading {
+    text-transform: uppercase;
  }
 
 .beta-text {
